@@ -4,27 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List - EBAC</title>
-    <link rel="stylesheet" href="./main.css">
+    <title>Formulário de Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Alegreya:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <div class="bg-img">
     </div>
     <div class="container">
-        <header>
-            <h1>To Do List</h1>
-        </header>
+        <h1>Cadastro</h1>
         <form>
-            <input type="text" placeholder="Write here your task" required id="task">
-            <button type="submit">Add +</button>
+            <!-- [Nome Completo] [email] [telefone - MASK] [cpf - MASK] [endereço completo] [CEP - MASK] -->
+            <label for="name">Nome Completo:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">Telefone:</label>
+            <input type="tel" name="phone" id="phone" required>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" required>
+            <div class="complete-address">
+                <div>
+                    <label for="addressType">Tipo:</label>
+                    <select name="addressType" id="addressType">
+                        <option value="rua">Rua</option>
+                        <option value="avenida">Av.</option>
+                        <option value="rodovia">Rod.</option>
+                        <option value="alameda">Al.</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="address">Endereço:</label>
+                    <input type="text" name="address" id="address" required>
+                </div>
+                <label for="number">Nº:</label>
+                <input type="number" name="number" id="number" min="1" required>
+                <label for="complement">Compl.:</label>
+                <input type="text" name="complement" id="complement">
+                <label for="cep">CEP:</label>
+                <input type="text" name="cep" id="cep" required>
+            </div>
+            <button type="submit">Enviar</button>
         </form>
-        <ul></ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
