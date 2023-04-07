@@ -87,9 +87,10 @@ body {
     max-width: 255px;
 }
 
-.container select {
+select {
     font-size: 16px;
     padding: 4px;
+    opacity: 0.7;
 }
 
 form button {
