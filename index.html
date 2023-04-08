@@ -26,27 +26,27 @@
             <label for="cpf">CPF:</label>
             <input type="text" name="cpf" id="cpf" required>
             <div class="complete-address">
-                <div>
-                    <label for="addressType">Tipo:</label>
-                    <select name="addressType" id="addressType">
-                        <option value="rua">Rua</option>
-                        <option value="avenida">Av.</option>
-                        <option value="rodovia">Rod.</option>
-                        <option value="alameda">Al.</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="address">Endereço:</label>
-                    <input type="text" name="address" id="address" required>
-                </div>
+                <label for="addressType">Tipo:</label>
+                <select name="addressType" id="addressType">
+                    <option value="rua">Rua</option>
+                    <option value="avenida">Av.</option>
+                    <option value="rodovia">Rod.</option>
+                    <option value="alameda">Al.</option>
+                </select>
+            </div>
+            <label for="address">Endereço:</label>
+            <input type="text" name="address" id="address" required>
+            <div class="complete-address">
                 <label for="number">Nº:</label>
                 <input type="number" name="number" id="number" min="1" required>
                 <label for="complement">Compl.:</label>
                 <input type="text" name="complement" id="complement">
+            </div>
+            <div class="complete-address">
                 <label for="cep">CEP:</label>
                 <input type="text" name="cep" id="cep" required>
             </div>
-            <button type="submit">Enviar</button>
+            <button id="button-send" type="submit">Enviar</button>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
