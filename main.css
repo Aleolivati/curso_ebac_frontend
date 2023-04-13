@@ -1,110 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Sofia Sans Condensed', sans-serif;
+img {
+    max-width: 180px;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    overflow-y: hidden;
+button {
+    margin-top: 12px;
+    width: 120px;
 }
 
-.bg-img {
-    background-image: url(./images/bg-rain.gif);
-    position: absolute;
-    width: 100%;
-    height: 200%;
-    background-size: cover;
-    z-index: -1;
-    background-position-y: -300px;
-    
-}
-
-.container {
-    background-color: rgba(222, 217, 217,0.8);
-    padding: 15px;
-    max-width: 350px;
-    width: 100%;
-    min-height: 300px;
-    margin-top: 50px;
-    border-radius: 15px;
-}
-
-.container h1 {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-}
-.container form {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-}
-
-.container form label {
-    margin-bottom: 3px;
-}
-
-.container form input {
-    padding: 4px;
-    width: 100%;
-    opacity: 0.7;
-    margin-bottom: 5px;
-}
-
-.complete-address {
-    display: inline-block;
-    margin-top: 10px;
-
-}
-
-.complete-address label,
-.complete-address input,
-.complete-address select {
-    width:  100%;
-}
-
-#addressType {
-    max-width: 60px;
-}
-
-#number {
-    max-width: 40px;
-}
-
-#complement {
-    width: 160px;
-}
-
-#cep {
-    max-width: 255px;
-}
-
-select {
-    font-size: 16px;
-    padding: 4px;
-    opacity: 0.7;
-    margin-bottom: 5px;
-
-}
-
-form button {
-    margin-top: 20px;
-    padding: 5px 0;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
-    border-radius: 12px;
-    background-color: #0faf09;
-    color:#ffffff;
-    cursor: pointer;
-    transition: all ease 0.2s;
-}
-
-form button:hover {
-    background-color: #33cb2e;
+input, label {
+    display: block;
 }
