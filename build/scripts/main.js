@@ -1,0 +1,1 @@
+function testeSoma(e,o){return e+o}console.log(testeSoma(10,13));
