@@ -1,0 +1,15 @@
+.product__image {
+  width: 100%;
+}
+.product__title {
+  font-size: 1.2em;
+  margin: 8px 0;
+}
+.product__description {
+  color: gray;
+}
+.product__control--is-highlight {
+  border: 2px solid gold;
+  padding: 8px;
+  background-color: #ffff42;
+}
