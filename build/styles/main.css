@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
+.aStyle {
+  color: #fff;
+  text-decoration: none;
+}
+.liStyle {
+  list-style: none;
+}
 header {
   background-color: #182C61;
   position: sticky;
@@ -74,13 +81,6 @@ section .products {
     grid-template-columns: repeat(2, 48.5%);
     column-gap: 3%;
   }
-}
-.aStyle {
-  color: #fff;
-  text-decoration: none;
-}
-.liStyle {
-  list-style: none;
 }
 body {
   background-color: #f5f6fa;
