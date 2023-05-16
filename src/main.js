@@ -8,13 +8,16 @@ const boletim = alunos.map((nomeAluno, indice) => ({
         nota: notas[indice]
 })) ;
 
-boletim.push({
-    nome: 'Maria',
-    nota: 5
-}, {
-    nome: 'Pedro',
-    nota: 8
-})
+boletim.push(
+    {
+        nome: 'Maria',
+        nota: 5
+    }, 
+    {
+        nome: 'Pedro',
+        nota: 8
+    }
+)
 
 
 const aprovados = boletim.filter(boletimAluno => {return boletimAluno.nota >= 6 }) ;
