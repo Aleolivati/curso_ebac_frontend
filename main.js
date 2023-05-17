@@ -41,14 +41,21 @@ function OrcPaladin (heroName) {
 
 const hero1 = new DwarfMage('Loyen') ;
 const hero2 = new OrcPaladin('Laythan') ;
-const hero3 = new Hero('Suylan', 'Elf', 'Druid', 'Bow', 'none', 'Leather', 20) ;
+const hero3 = new OrcPaladin('Turok') ;
+
+const hero4 = new Hero('Suylan', 'Elf', 'Druid', 'Bow', 'none', 'Leather', 20) ;
 
 console.log(hero1) ;
 hero1.theMagicPower() ;
-console.log("The Magic Power is " + hero1.getMagicPower()) ;
+console.log(`The Magic Power of ${hero1.heroName} is ${hero1.getMagicPower()}`) ;
 
 console.log(hero2) ;
 hero2.theMagicPower() ;
-console.log("The Magic Power is " + hero2.getMagicPower()) ;
+console.log(`The Magic Power of ${hero2.heroName} is ${hero2.getMagicPower()}`) ;
 
 console.log(hero3) ;
+hero3.theMagicPower() ;
+console.log(`The Magic Power of ${hero3.heroName} is ${hero3.getMagicPower()}`) ;
+
+console.log(hero4) ;
+
